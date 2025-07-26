@@ -52,8 +52,9 @@
 }
 /* Banner Styles */
 .banner {
+    align-items: flex-end;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-left: 150px;
     margin-right: 150px;
     margin-top: 120px;    
@@ -71,8 +72,64 @@
     color: rgba(0, 0, 0, 0.5);
 }
 .banner-img{
-    width: 100%;
     height: auto;
+}
+/* Plant Section */
+.plants {
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.plants-content {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 120px;
+}
+.plants-content h2 {
+    font-size: 40px;
+    color: #252432;
+    font-weight: bold;
+    text-align: center;
+}
+.plants-content p {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.plants-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;  
+    margin-top: 2px;
+}
+.card {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    
+}
+.p-btn{
+    background-color: #E95A08;
+    color: #FFFFFF;
+    border: none;
+    width: 270px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+.p-n {
+    font-size: 22px;
+    color: #252432;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.p-p {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 /* media query */
 @media (max-width: 393px) {
@@ -91,6 +148,7 @@
     /* Banner section responsive */
     .banner {
         flex-direction: column-reverse;
+        align-items: stretch;
         margin: 0px;
     }
     .banner-content{
@@ -111,5 +169,10 @@
     }
     .banner-img img{
         width: 100%;
+    }
+    /* Plant section responsive */
+    .plants-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
 }

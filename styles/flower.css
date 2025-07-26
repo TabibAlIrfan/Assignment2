@@ -156,6 +156,49 @@
 .plant-lover-img {
     
 }
+/* Join section */
+.join {
+    background-image: url("/Assignment2/assets/news-letter-bg.png");
+    background-size: cover;
+}
+.join-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.join-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.join-content input {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.join-content button {
+    background-color: #E95A08;
+    color: #FFFFFF;
+    border: none;
+    width: 186px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 16px;
+}
 
 /* media query */
 @media (max-width: 393px) {
@@ -207,5 +250,12 @@
         align-items: left;
         gap: 20px;
         margin: 0px;
+    }
+    /* Join section */
+    .join-content input {
+        width: auto;
+        height: 50px;
+        font-size: 16px;
+        margin-top: 20px;
     }
 }

@@ -1,0 +1,58 @@
+/* Inter font */
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+/* Noto Serif font */
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #F5F8FF;
+}
+
+.nav-logo img {
+    height: 50px;
+}
+
+.nav-btns {
+    display: flex;
+    gap: 48px;
+}
+
+.nav-anchor {
+    text-decoration: none;
+    color: #8987A1;
+    font-weight: regular;
+}
+#home {
+    color: #252432;
+    font-weight: 600;
+}
+.nav-anchor:hover {
+    color: #252432;
+}
+/* media query */
+@media (max-width: 768px) {
+    .vanish {
+        display: none;
+    }
+    .nav-anchor {
+        color: #252432;
+        font-weight: 600;
+    }
+}
